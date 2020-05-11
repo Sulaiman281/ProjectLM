@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.IssueBook">
+   <children>
+      <Label layoutX="339.0" layoutY="25.0" text="Issue Book" textFill="#ff7400" underline="true">
+         <font>
+            <Font name="Comic Sans MS" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="115.0" text="Student Roll No" textFill="#ff7400">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="rollNo" layoutX="53.0" layoutY="140.0" promptText="2k17/SWE/87">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="bookID" layoutX="326.0" layoutY="140.0" promptText="book id">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </TextField>
+      <Label layoutX="326.0" layoutY="115.0" text="Book ID" textFill="#ff7400">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+      <Button blendMode="DARKEN" layoutX="222.0" layoutY="174.0" mnemonicParsing="false" onAction="#issue_book" text="Issue book">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font>
+      </Button>
+      <TextFlow layoutX="123.0" layoutY="243.0" prefHeight="148.0" prefWidth="406.0">
+         <children>
+            <Text fx:id="msg" strokeType="OUTSIDE" strokeWidth="0.0" text="Issue Data &amp; Time and return date">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </TextFlow>
+   </children>
+</AnchorPane>

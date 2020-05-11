@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AdminLoginController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" layoutX="86.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../sample/images/casey-marie-JHYLKimJzo8-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="322.0" layoutY="145.0" prefHeight="311.0" prefWidth="328.0" style="-fx-background-color: #000000; -fx-opacity: .89;">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../sample/images/icons8-books-100.png" />
+               </image>
+            </ImageView>
+            <HBox layoutX="50.0" layoutY="150.0" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: #f9a313;">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../sample/images/icons8-admin-settings-male-40.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="inputField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="200.0" promptText="admin username">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font></TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="50.0" layoutY="200.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="240.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: #f9a313;">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../sample/images/icons8-microsoft-admin-50.png" />
+                     </image>
+                  </ImageView>
+                  <PasswordField fx:id="passwordField" prefHeight="44.0" prefWidth="200.0" promptText="admin password">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font></PasswordField>
+               </children>
+            </HBox>
+            <Button fx:id="loginBtn" layoutX="122.0" layoutY="250.0" mnemonicParsing="false" onAction="#login_Admin" text="Login" textAlignment="CENTER" textFill="#5100ff">
+               <font>
+                  <Font name="Constantia" size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="95.0" layoutY="29.0" text="Library" textAlignment="CENTER">
+               <font>
+                  <Font name="Comic Sans MS" size="36.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.6666666666666667" centerY="0.18095238095238098" cycleMethod="REFLECT" focusDistance="0.11627906976744184" radius="0.3953488372093023">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.2561640739440918" green="0.07760000228881836" blue="0.9700000286102295" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="116.0" layoutY="79.0" text="Management" textAlignment="CENTER">
+               <font>
+                  <Font name="Comic Sans MS" size="36.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.438888888888889" centerY="0.2666666666666667" cycleMethod="REFLECT" focusDistance="0.11627906976744184" radius="0.3953488372093023">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.9700000286102295" green="0.07760000228881836" blue="0.07760000228881836" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+         </children>
+      </Pane>
+      <Button layoutX="841.0" layoutY="14.0" mnemonicParsing="false" onAction="#close_app" style="-fx-background-color: #80a4a8;" text="X">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
